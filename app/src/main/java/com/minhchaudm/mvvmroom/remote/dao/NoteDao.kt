@@ -14,4 +14,5 @@ interface NoteDao {
     suspend fun deleteNote(note: Note)
     @Query("Select *from Note_App")
     fun getAll():LiveData<List<Note>>
+
 }

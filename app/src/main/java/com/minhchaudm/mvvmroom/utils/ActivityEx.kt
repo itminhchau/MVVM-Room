@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 
-fun AppCompatActivity.addFragment(fragment: Fragment, id: Int) {
+fun AppCompatActivity.addFragment(fragment: Fragment, id: Int,tag: String) {
     supportFragmentManager.inTransaction {
         add(id, fragment)
-        addToBackStack(null)
+        addToBackStack(tag)
     }
 }
 

@@ -6,6 +6,4 @@
     android:layout_height="match_parent"
     android:id="@+id/frame_layout"
     tools:context=".activity.MainActivity">
-
-
 </FrameLayout>

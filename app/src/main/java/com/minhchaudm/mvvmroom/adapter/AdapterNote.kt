@@ -50,4 +50,7 @@ class AdapterNote(
         this.listNote = note
         notifyDataSetChanged()
     }
+    fun getNote(position: Int): String{
+        return listNote[position].toString()
+    }
 }

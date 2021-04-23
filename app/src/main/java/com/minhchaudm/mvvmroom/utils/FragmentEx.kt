@@ -9,10 +9,10 @@ inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> Fragmen
     beginTransaction().func().commit()
 }
 
-fun Fragment.addFragment(fragment: Fragment, id: Int) {
+fun Fragment.addFragment(fragment: Fragment, id: Int,tag: String) {
     fragmentManager?.inTransaction {
         add(id, fragment)
-        addToBackStack(null)
+        addToBackStack(tag)
     }
 }
 
